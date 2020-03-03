@@ -1,0 +1,8 @@
+def some_function()
+    value = 1 + 2
+    write(value)
+end
+
+def main()
+    some_function()
+end
