@@ -1,6 +1,0 @@
-S -> AC | bA | B | aA
-A -> \ | aS | ABab
-B -> a | bS
-C -> abC
-D -> AB
-
