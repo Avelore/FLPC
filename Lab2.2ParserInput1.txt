@@ -1,0 +1,6 @@
+import func echo(message)
+import func if_func(condition, true_branch, false_branch)
+
+func fibo(a) if_func(a>2, fibo(a-1)+fibo(a-2), 1)
+
+echo(fibo(100))

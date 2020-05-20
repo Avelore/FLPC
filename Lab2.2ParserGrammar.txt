@@ -1,0 +1,14 @@
+toplevel		::= funcimpexpr | funcdefexpr | toplevelexpr
+funcimpexpr		::= 'import' funcproto 
+funcdefexpr		::= funcproto expression
+funcproto		::= 'func' identifier '(' identifier ( ',' identifier )* ')'
+identifier		::= [a-zA-Z][a-zA-Z0-9]*
+number			::= [0-9]+(\.[0-9]*)?
+toplevelexpr	::= expression
+identifierexpr	::= identifier | identifier '(' identifier ( ',' identifier )* ')'
+numberexpr		::= number
+parenexpr		::= '(' expression ')'
+expression		::= primary binoprhs
+primary			::= identifierexpr | numberexpr | parenexpr
+binoprhs		::= ( binop primary )*
+binop			::= '+' | '-' | '*' | '/' | '>' | '<' | '='

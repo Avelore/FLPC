@@ -1,0 +1,8 @@
+import func read_lines()
+import func filter(list)
+import func length(container)
+import func print(message)
+
+func len_gt_10(line) length(line) > 10
+
+print(filter(read_lines(), len_gt_10))
